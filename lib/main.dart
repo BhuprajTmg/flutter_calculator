@@ -1,9 +1,18 @@
+
 import 'package:flutter/material.dart';
 
-import 'Screens/calculator_screen.dart';
+import 'Screens/grid_view_screen.dart';
 
 void main() {
-  runApp(
-    calculatorScreen()
-  );
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    initialRoute: '/',
+
+    routes: {
+      '/': (context) => const GridScreen(),
+
+    },
+  ));
 }
+
+// me
